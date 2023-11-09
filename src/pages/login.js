@@ -14,7 +14,7 @@ const LoginPage = () => {
 				<h3>LOGIN</h3>
 				<div className={styles.social_icons}>
 					<GoogleOutlined />
-					<GithubOutlined onClick={() => signIn("github")} />
+					<GithubOutlined onClick={() => signIn("github", {callbackUrl: "http://localhost:3000/"})} />
 				</div>
 				<hr />
 				<form>
