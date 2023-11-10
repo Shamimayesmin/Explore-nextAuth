@@ -9,8 +9,10 @@ const HomePage = () => {
       </Head>
       <h1 style={{ textAlign: "center", marginTop:"10%" }}>Welcome To Next Auth Home Page</h1>
       <h2 style={{ textAlign: "center", }}>Logged in user: {session?.user?.name}</h2>
+      <h2 style={{ textAlign: "center", }}>Logged in user email: {session?.user?.email}</h2>
     </div>
   );
 };
 
 export default HomePage;
+
