@@ -33,10 +33,11 @@ const LoginPage = () => {
 				<hr />
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<label htmlFor="">Your Email</label>
-					<input type="email" />
+					<input {...register("email", { required: true })} type="email" />
 					<label htmlFor="">Your Password</label>
-					<input type="password" />
-					<Button>Login</Button>
+					<input {...register("password", { required: true })} type="password" />
+					<button type='submit'>Login</button>
+					
 				</form>
 			</div>
 		</div>
