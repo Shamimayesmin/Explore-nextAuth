@@ -36,7 +36,7 @@ const LoginPage = () => {
 					<input {...register("email", { required: true })} type="email" />
 					<label htmlFor="">Your Password</label>
 					<input {...register("password", { required: true })} type="password" />
-					<button type='submit'>Login</button>
+					<button type='submit' className='btn'>Login</button>
 					
 				</form>
 			</div>
